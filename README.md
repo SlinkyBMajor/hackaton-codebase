@@ -11,13 +11,40 @@ A tiny grid-based dungeon crawler. Navigate the dungeon, slay monsters, collect 
 
 ## Getting started
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18 or later
+- npm v8 or later (comes with Node.js)
+
+### Install dependencies
+
+From the **root** of the repo (installs deps for all workspaces):
+
 ```bash
 npm install
+```
+
+### Run locally
+
+```bash
 npm run dev
 ```
 
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:3001
+This starts both the backend and frontend concurrently:
+
+| Service | URL |
+|---------|-----|
+| Frontend | http://localhost:5173 |
+| Backend API | http://localhost:3001 |
+
+> To run them separately:
+> ```bash
+> # Backend only
+> npm run dev --workspace=packages/backend
+>
+> # Frontend only
+> npm run dev --workspace=packages/frontend
+> ```
 
 ## How to play
 
