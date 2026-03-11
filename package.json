@@ -1,0 +1,13 @@
+{
+  "name": "dungeon-sprint",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c magenta,cyan \"npm run dev --workspace=packages/backend\" \"npm run dev --workspace=packages/frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
